@@ -27,66 +27,7 @@ class _QuestionPageState extends State<QuestionPage> {
   var questionIndex = 0;
   List<String> selectedAnswer = [];
 
-  // void Choose(String ans) {
-  //   selectedAnswer.add(ans);
-  //   var currentques = questionlist[questionIndex];
-  //   var crtanswer = currentques.crtans;
-  //   bool iscorrect = ans == currentques.crtans;
-  //   currentques.iscrt = iscorrect;
-  //   // setState(() {
-  //   //   if (questionIndex < questionlist.length - 1) {
-  //   // questionIndex++;}
-  //   // });
-  //   //if all questions are answered got to this page
-  //   if (selectedAnswer.length < questionlist.length) {
-  //     if (ans == crtanswer) {
-  //       setState(() {});
-  //       controller.play();
-  //       Future.delayed(Duration(seconds: 2), () {
-  //         setState(() {
-  //           if (selectedAnswer.length < questionlist.length) {
-  //             questionIndex++;
-  //           }
-  //         });
-  //       });
-  //     } else {
-        
-  //       setState(() {
-  //         if (selectedAnswer.length < questionlist.length) {
-  //           questionIndex++;
-  //         }
-  //       });
-  //     }
-  //   } else if (selectedAnswer.length == questionlist.length) {
-  //     if (ans == crtanswer) {
-  //       controller.play();
-  //       Future.delayed(Duration(seconds: 2), () {
-  //         Navigator.push(
-  //             context,
-  //             MaterialPageRoute(
-  //                 builder: (Context) => ResultsPage(
-  //                       SelectedAnswer: selectedAnswer,
-  //                     )));
-  //       });
-  //     } else {
-  //       Future.delayed(Duration(seconds: 1), () {
-  //         Navigator.push(
-  //             context,
-  //             MaterialPageRoute(
-  //                 builder: (Context) => ResultsPage(
-  //                       SelectedAnswer: selectedAnswer,
-  //                     )));
-  //       });
-  //     }
-  //   } else {
-  //     setState(() {
-  //       if (selectedAnswer.length < questionlist.length) {
-  //         questionIndex++;
-  //       }
-  //     });
-  //   }
-  // }
-
+  
  void Choose(String ans) {
     setState(() {
       selectedAnswer.add(ans);
